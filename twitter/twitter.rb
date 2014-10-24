@@ -3,19 +3,29 @@ require 'bigbertha'
 base_uri = 'https://sweltering-inferno-6192.firebaseio.com'
 
 
-ref = Bigbertha::Ref.new( 'https://sweltering-inferno-6192.firebaseio.com' )
+$ref = Bigbertha::Ref.new( 'https://sweltering-inferno-6192.firebaseio.com' )
 
 
 # class Controller
   user_input = ARGV
 
+  def parse_database
+    all_tweets_hash = $ref.child.read
+    all_tweets_array = []
+    all_tweets_hash.each do |key,value|
+      all_tweets_array << [key, value]
+    end
+    p all_tweets_array
+  end
+  parse_database
+
   if ARGV[0] == "add"
     user_input.shift
-    # ref.push({tweet_text: user_input.join(" "), sent: false})
-    # ref.child( "J_-vJvO0OmpRGZVCH0i" ).update(sent: true)
-    p ref.child.read
+    $ref.push({tweet_text: user_input.join(" "), sent: false})
+    # $ref.child( "J_-vJvO0OmpRGZVCH0i" ).update(sent: true)
+
     #delete tweets after send
-    # p ref.child
+    # p $ref.child
   elsif ARGV[0] == "tweet"
     # Tweet.send_tweet
   else
