@@ -24,7 +24,6 @@ class Controller
     if ARGV[0] == "add"
       user_input.shift
       $ref.push({tweet_text: user_input.join(" "), sent: false})
-
     elsif ARGV[0] == "tweet"
       Controller.parse_database
       Tweet.send_tweet(@tweet_text_to_send)

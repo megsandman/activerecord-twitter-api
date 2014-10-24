@@ -1,11 +1,11 @@
 source "http://rubygems.org"
 
-
-gem 'typhoeus', ">= 0.6.1"
-gem 'json'
-gem "rake"
 gem 'bigbertha'
-group :development do
-  gem "rspec"
-  gem "jeweler"
-end
+gem 'json'
+gem 'oauth'
+# gem 'typhoeus', ">= 0.6.1"
+# gem "rake"
+# group :development do
+#   gem "rspec"
+#   gem "jeweler"
+# end
