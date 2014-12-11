@@ -1,0 +1,127 @@
+
+
+body {
+  font-size: 16px;
+  font-family: helvetica;
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  color: #757575;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.page-wrap {
+  margin-left: auto;
+  margin-right: auto;
+  width:100%;
+}
+
+#header {
+  margin-top: 150px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.name {
+  line-height: 30px;
+  font-weight: 700;
+  font-size: 80px;
+  letter-spacing: -2px;
+  color:#57B4D8;
+}
+
+.name span {
+  color:#bdc3c7;
+}
+
+#add-item-container {
+  width: 100%;
+}
+
+.add-to-do {
+  width: 65%;
+  height: 49px;
+  margin: 0 -2px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  float: left;
+  border: 2px solid #eee;
+  border-right: 2px solid #fff;
+  background: #fff;
+  color: #757575;
+  font-size: 16px;
+}
+
+.enter-code {
+  width: 65%;
+  height: 49px;
+  margin: 0 -2px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  float: left;
+  border: 2px solid #eee;
+  background: #fff;
+  color: #757575;
+  font-size: 16px;
+}
+
+
+.submit {
+  width: 34%;
+  height: 55px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  display: inline-block;
+  font-weight: 700;
+  cursor: pointer;
+  color: #fff;
+  padding: 14px 0;
+  background-color: #2ecc71;
+  border: #2ecc71;
+  font-size: 20px;
+}
+
+.submit:hover {
+  background-color: #66C266;
+}
+
+
+#code {
+  padding-top: 10px;
+}
+
+.list-change-wrap {
+  padding: 2% 5%;
+  position:relative;
+  text-align: center;
+  width:600px;
+  margin:5px auto;
+  max-width: 80%;
+  overflow: hidden;
+  background-color: white;
+}
+
+p {
+  font-family: 'Allerta Stencil', sans-serif;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
